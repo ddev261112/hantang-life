@@ -1,2 +1,143 @@
-# hantang-life
-HANTANG LIFE is a browser-based 3D wealth survival game where players start with nothing and compete to build the greatest fortune in a single lifetime.
+# 한탕인생 (HANTANG LIFE)
+
+> 인생은 한 번, 한탕은 끝까지.
+
+**HANTANG LIFE** is a browser-based 3D wealth survival game where players start with nothing and compete to build the greatest fortune in a single lifetime.
+
+## 1. 프로젝트 소개
+
+한탕인생은 무일푼으로 시작하여 자신만의 방식으로 부를 축적하는 웹 기반 3D 인생 시뮬레이션 게임입니다.
+
+플레이어는 인생을 바꿀 세 가지 돈벌이 방식 중 하나를 선택합니다.
+
+선택한 경로는 캐릭터의 생애 동안 변경할 수 없으며, 플레이어는 해당 방식만으로 자산을 늘려 다른 플레이어와 경쟁해야 합니다.
+
+**핵심 콘셉트**
+- 모든 플레이어의 시작 자본은 0이다.
+- 세 가지 자본 축적 경로 중 하나를 선택한다.
+- 한 번 선택한 경로는 해당 캐릭터가 죽을 때까지 변경할 수 없다.
+- 투자, 투기, 거래에서 발생하는 성공과 실패를 경험한다.
+- 최종적으로 축적한 자산을 바탕으로 다른 플레이어와 경쟁한다.
+
+## 2. 게임 플레이
+
+### 2.1 자본 축적 경로
+
+**① 주식 및 암호화폐 (Trading)**
+
+가상의 금융시장에서 주식과 암호화폐를 거래하며 자산을 늘리는 경로입니다.
+
+- 자산 매수 및 매도
+- 가격 변동에 따른 손익
+- 시장 이벤트와 리스크 관리
+
+**② 수집형 카드 거래 (Card Flipping)**
+
+수집형 카드의 가치 변동을 활용하여 수익을 창출하는 경로입니다.
+
+- 카드팩 구매 및 개봉
+- 희귀 카드 수집
+- 카드 매매와 시세 차익
+
+※ 실제 포켓몬 카드가 아닌 자체 제작 카드 세계관을 우선 고려합니다.
+
+**③ 카지노 (Casino)**
+
+확률 기반 카지노 게임을 통해 자산을 늘리는 경로입니다.
+
+- 카지노 미니게임
+- 베팅과 확률 기반 보상
+- 높은 위험과 높은 수익 가능성
+
+모든 거래와 베팅은 게임 내 가상 재화로 이루어집니다.
+
+### 2.2 핵심 플레이 흐름
+
+1. 캐릭터 생성 및 게임 시작
+2. 자본 축적 경로 선택
+3. 초기 자본을 확보하는 활동 수행
+4. 선택한 경로를 통한 자산 증식
+5. 자산 변화와 인생 이벤트 경험
+6. 생애 종료 시 결과 기록 및 순위 비교
+
+초기 자본 확보 방식, 캐릭터 수명, 생애 종료 조건, 랭킹 산정 기준은 추가 기획을 통해 확정합니다.
+
+## 3. 게임의 핵심 원칙
+
+**One Life, One Path**
+
+한 생애에 하나의 돈벌이 방식만 허용합니다.
+
+**Risk & Reward**
+
+큰 수익을 얻을 기회에는 그에 상응하는 위험이 존재합니다.
+
+**Wealth Competition**
+
+플레이어의 자산 증식 결과를 기록하고 서로 비교할 수 있습니다.
+
+**Humor & Satire**
+
+현실의 재테크 열풍과 인생역전에 대한 욕망을 유머러스하게 표현합니다.
+
+## 4. 초기 개발 목표 (MVP)
+
+첫 번째 목표는 완성된 게임이 아닌, 핵심 게임 루프를 검증할 수 있는 플레이 가능한 프로토타입입니다.
+
+- [ ] 브라우저에서 실행되는 기본 3D 환경
+- [ ] 플레이어 캐릭터 및 기본 인터랙션
+- [ ] 세 가지 자본 축적 경로 선택 UI
+- [ ] 선택한 경로의 변경 제한
+- [ ] 경로별 최소 1개의 플레이 가능한 메커니즘
+- [ ] 자본 및 순자산 계산
+- [ ] 게임 진행 상태 저장
+- [ ] 기본 리더보드
+
+## 5. 기술 스택
+
+기술 스택은 초기 프로토타입 검증 후 확정합니다.
+
+| 영역 | 검토 대상 |
+|---|---|
+| Language | TypeScript |
+| Frontend | React / Vite |
+| 3D Rendering | Three.js / React Three Fiber |
+| Backend | Cloudflare Workers |
+| Database | Cloudflare D1 |
+| Hosting | Cloudflare |
+| Version Control | GitHub |
+
+위 목록은 확정된 기술 스택이 아닌 초기 검토 대상입니다.
+
+## 6. 프로젝트 정보
+
+- **Project:** HANTANG LIFE (한탕인생)
+- **Platform:** Web Browser
+- **Genre:** 3D Wealth Survival / Simulation
+- **Development:** 2-person indie project
+- **Website:** hantanglife.com (planned)
+- **Status:** Pre-production
+- **Version:** 0.1.0 (planning)
+
+## 7. 개발 및 협업
+
+- `main` 브랜치를 기본 브랜치로 사용합니다.
+- 기능 개발은 별도 브랜치에서 진행합니다.
+- 변경 사항은 Pull Request를 통해 병합합니다.
+- 주요 버그와 기능 작업은 GitHub Issues로 관리합니다.
+- 게임 규칙 및 아키텍처의 중요한 변경 사항은 팀원 간 합의 후 기록합니다.
+- API 키와 비밀 정보는 Git 저장소에 커밋하지 않습니다.
+
+## 8. 프로젝트 문서
+
+- [TODO.md](TODO.md) — 개발 작업 및 진행 현황
+- `docs/GAME_DESIGN.md` — 상세 게임 기획서 (예정)
+- `docs/DECISIONS.md` — 주요 기술 및 기획 결정 기록 (예정)
+
+## 9. 라이선스
+
+현재 비공개 개발 프로젝트입니다.
+
+소스코드 및 게임 에셋의 공개·재사용 라이선스는 추후 결정합니다.
+
+이 프로젝트는 가상 재화를 사용하는 게임이며, 실제 금융 투자 서비스 또는 현금성 도박 서비스를 제공하지 않습니다.
